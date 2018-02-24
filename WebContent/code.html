@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="js/qrcode.js"></script>
+</head>
+
+<body>
+   <!-- 该div的作用主要用于显示二维码的 -->
+   <div id="code"></div>
+</body>
+<script type="text/javascript">
+	//1 需要生成一个空白的二维码
+	/*
+	  qrcode(args1,args2); 
+		args1 : 表示的是二维码的大小， 范围是1~10   10最大，1最小
+		args2 : 表示的是二维码的容错级别。 容错级别使用字母表示：  L(7%)  M(15%)  Q(25%)  H(35%)·
+	
+	*/
+	var qr = qrcode(10,"H");
+	
+	//需求：把传智播客的个官网地址存储到二维码中。 
+	//2 需要添加数据到二维码中
+	qr.addData("https://lifewang.github.io");
+	
+	//3 利用数据生成二维码,生成的二维码目前是在内存中。
+	qr.make();
+	
+	//4 在div上显示二维码
+	$("#code").html(qr.createImgTag());
+	
+	
+</script>
+
+</html>

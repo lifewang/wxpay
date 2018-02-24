@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>wxpay</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>CreateCodeServlet</display-name>
+    <servlet-name>CreateCodeServlet</servlet-name>
+    <servlet-class>com.itheima.web.CreateCodeServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CreateCodeServlet</servlet-name>
+    <url-pattern>/createCode</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>CheckStatusServlet</display-name>
+    <servlet-name>CheckStatusServlet</servlet-name>
+    <servlet-class>com.itheima.web.CheckStatusServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CheckStatusServlet</servlet-name>
+    <url-pattern>/checkStatus</url-pattern>
+  </servlet-mapping>
+</web-app>

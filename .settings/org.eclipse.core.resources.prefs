@@ -1,0 +1,5 @@
+eclipse.preferences.version=1
+encoding//src/com/itheima/util/HttpClient.java=UTF-8
+encoding//src/com/itheima/util/PayConfig.java=UTF-8
+encoding//src/com/itheima/web/CheckStatusServlet.java=UTF-8
+encoding//src/com/itheima/web/CreateCodeServlet.java=UTF-8
